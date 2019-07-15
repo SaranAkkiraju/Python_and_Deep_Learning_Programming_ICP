@@ -20,9 +20,10 @@ test_data = test_images.reshape(test_images.shape[0],dimData)
 #convert data to float and scale values between 0 and 1
 train_data = train_data.astype('float')
 test_data = test_data.astype('float')
+
 #scale data
-'''train_data /=255.0
-test_data /=255.0'''
+train_data /=255.0
+test_data /=255.0
 #change the labels frominteger to one-hot encoding
 train_labels_one_hot = to_categorical(train_labels)
 test_labels_one_hot = to_categorical(test_labels)
